@@ -1,18 +1,18 @@
-## About the Translator Application
+## About the Extract Text From Image App
 
-A web application that allows users to translate text from english to any of the following languages
-[spanish, french, german, russian, yoruba, chinese]
+A web application that where users can upload images with text on it and
+see extract the text from the images
 
 ## Project Specifications
 
-1. A user can add a text to the textbox and click the translate button to translate text to the target language
+1. A user can simply upload an image and when they submit they see text printed out.
 
 # Tech Used
 
 1. Node.js
 2. Express.js
 3. hbs.js used to create views for the frontend frontend
-4. google translate API used to translate provided text from target language
+4. Tesseract.js: is a npm package based on the OCR(Optical Character Recognition) that helps to extract text from images
 
 How to start
 

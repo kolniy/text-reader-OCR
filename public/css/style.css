@@ -25,6 +25,10 @@ body {
   margin-right: 1rem;
 }
 
+.btn-submit {
+  width: 100%;
+}
+
 .output-section {
   width: 50%;
   height: 50vh;
