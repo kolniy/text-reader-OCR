@@ -14,40 +14,26 @@
 <body>
 
   <div class="main-content">
-      <h1>Translator App</h1>
+      <h1>Extract Text From Image</h1>
 
     <div class="app-functionality__container">
         <div class="form-section">
              <form>
                 <div class="form-group">
-                    <label for="textarea">Text To Translate (in English)</label>
-                    <textarea class="form-control" placeholder="your text." id="textareaInput" rows="3"></textarea>
+                    <label for="file-input">Click to Upload Image</label>
+                    <input type="file" name="image" accept="image/*" class="form-control form-control-file" id="file-input" />
                 </div>
-                <div class="form-group">
-                    <label for="targetLanguage">Your Target Language:</label>
-                    <select class="form-control" id="targetLanguageInput">
-                    <option value="es">Spanish</option>
-                    <option value="fr">French</option>
-                    <option value="de">German</option>
-                    <option value="ru">Russian</option>
-                    <option value="yo">Yoruba</option>
-                    <option value="zh-CN">Chinese</option>
-                    <opttion value="ja">Japanese</opttion>
-                    </select>
-                </div>
-                <button id="btn-submit" type="submit" class="btn btn-primary">Submit</button>
+                <button id="btn-submit" type="submit" class="btn btn-info mt-3">Convert</button>
              </form>
+             <div class="uploaded-img__container mt-4">
+            </div>
         </div>
         <div class="output-section">
-            <p>Translated Text</p>
+            <p>Extracted Text</p>
             <br />
-            <p class="translated-text"></p>
+            <p class="converted-text"></p>
         </div>
     </div>
-
-      <p id="message-1"></p>
-      <p id="message-2"></p>
-
   </div>
     <script src="/js/app.js"></script>
 </body>
